@@ -30,7 +30,9 @@ do
 done
 ```
 
-Note: the architectures were trained on slides scanned at 20x on a Leica AT2 whole slide scanner, therefore leading to a pixelsize of above 0.5 um/pixel. 
+Notes: 
+- the architectures were trained on slides scanned at 20x on a Leica AT2 whole slide scanner, therefore leading to a pixelsize of above 0.5 um/pixel. 
+- the sample code requests 1 GPU but the code should run on CPU alone too (though slightly slower).
 
 The ouputs will be saved in the folder in which the command is run. Within subfolders carrying the original name of each image, you should find the same 3 jpg images as those provided on the website (original tiles analyzed, the heatmap with intensity of the colors proportional to the associated probability, and the final segmented map. In the heatmap and the segmented map, tumors will appear in orange and normal tissue in blue, with artefacts in black and other types of tissues in purple). You will also find 1 csv with the different measurements done:
 
