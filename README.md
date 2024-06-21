@@ -4,14 +4,15 @@ MetFinder relies on a deep-learning network trained by manual annotations from p
 
 
 # Web access
-MetFinder can be access at http://spawebwcdcdvm01.nyumc.org/. Slides can be downloaded via the webinterface and will run on our local computers.
+MetFinder can be access at http://metfinder.org/. Slides can be downloaded via the webinterface and will run on our local computers.
 
 # Local installation
 If you want to run MetFinder on your own cluster machines, it will have to be run via command line.
 
 First, install the DeepPATH pipeline via the [DeepPATH github page](https://github.com/ncoudray/DeepPATH/).
 
-Then, you need to download the checkpoints associated with the brain met from [01_brain_B022_35k](https://genome.med.nyu.edu/public/tsirigoslab/DeepLearning/MetFinder/checkpoints/01_brain_B022_35k), and those associated with the liver met from [01_liver_L032_200k](https://genome.med.nyu.edu/public/tsirigoslab/DeepLearning/MetFinder/checkpoints/01_liver_L032_200k). 
+Then, you need to download the checkpoints associated with the brain met from [01_brain_B022_35k](https://genome.med.nyu.edu/public/tsirigoslab/DeepLearning/MetFinder/checkpoints/checkpoint_brain_B022), and those associated with the liver met from [01_liver_L032_200k](https://genome.med.nyu.edu/public/tsirigoslab/DeepLearning/MetFinder/checkpoints/checkpoint_liver_L032). 
+
 
 The `sb_MetFinder.sh` script above is a template script written for slurm/bash clusters. See the  [DeepPATH github page](https://github.com/ncoudray/DeepPATH/) for more details about the different instructions. In the script above, you will need to change the variables declared in the first few lines:
 - The `#SBATCH#` instructions are specific to our SLURM cluster. You need to adjust to whatever cluster you are using.
