@@ -2,6 +2,9 @@
 
 MetFinder relies on a deep-learning network trained by manual annotations from pathologists to recognize tumor and non-tumor regions in a whole slide, H&E stained image, removing artifacts and other types of tissues from the analysis. Thus far this tool is trained for the quantification of tumor burden resulting from human xenograft models of melanoma metastasis in mouse livers and mouse brains.
 
+# Publication
+
+Karz, Alcida, et al. "MetFinder: A Tool for Automated Quantitation of Metastatic Burden in Histological Sections From Preclinical Models." Pigment Cell & Melanoma Research; [https://doi.org/10.1111/pcmr.13195](https://doi.org/10.1111/pcmr.13195).
 
 # Web access
 MetFinder can be access at http://metfinder.org/. Slides can be downloaded via the webinterface and will run on our local computers.
